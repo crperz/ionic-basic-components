@@ -1,10 +1,14 @@
-<app-header title="componentes"></app-header>
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title text-capitalize>componentes</ion-title>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content padding>
-  <ion-button routerLink="/alert">
-    Alert
-  </ion-button>
-  <ion-button routerLink="/action-sheet">
-    Action Sheet
-  </ion-button>
+  <ion-list>
+    <ion-item *ngFor="let page of pages" [routerLink]="page.redirectTo">
+      <ion-icon slot="start" [name]="page.icon"></ion-icon>
+      <ion-label>{{ page.name }}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
