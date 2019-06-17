@@ -1,6 +1,7 @@
-<app-header title="alert page"></app-header> <!-- De esta manera envia el string "Alert" -->
+<app-header [title]="title"></app-header> <!-- De esta manera envia el string "Alert" -->
 <!-- <app-header [title]="Alert"></app-header> ->  Busca en el page.ts la variable Alert -->
 
 <ion-content padding>
-  <p>Alert Page!</p>
+  <ion-button expand="full" color="primary" (click)="presentAlertConfirm()">Click me</ion-button>
+  <ion-button expand="full" color="primary" (click)="presentAlertPrompt()">Show</ion-button>
 </ion-content>

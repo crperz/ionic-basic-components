@@ -16,6 +16,11 @@ export class InicioPage implements OnInit {
       icon: 'logo-apple',
       name: 'Action Sheet',
       redirectTo: '/action-sheet'
+    },
+    {
+      icon: 'beaker',
+      name: 'Avatar',
+      redirectTo: '/avatar'
     }
   ];
 
