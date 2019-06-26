@@ -8,11 +8,25 @@ const routes: Routes = [
     loadChildren: './pages/inicio/inicio.module#InicioPageModule'
   },
   { path: 'alert', loadChildren: './pages/alert/alert.module#AlertPageModule' },
-  { path: 'action-sheet', loadChildren: './pages/action-sheet/action-sheet.module#ActionSheetPageModule' },
-  { path: 'avatar', loadChildren: './pages/avatar/avatar.module#AvatarPageModule' },
-  { path: 'buttons', loadChildren: './pages/buttons/buttons.module#ButtonsPageModule' },
+  {
+    path: 'action-sheet',
+    loadChildren:
+      './pages/action-sheet/action-sheet.module#ActionSheetPageModule'
+  },
+  {
+    path: 'avatar',
+    loadChildren: './pages/avatar/avatar.module#AvatarPageModule'
+  },
+  {
+    path: 'buttons',
+    loadChildren: './pages/buttons/buttons.module#ButtonsPageModule'
+  },
   { path: 'card', loadChildren: './pages/card/card.module#CardPageModule' },
-  { path: 'check', loadChildren: './pages/check/check.module#CheckPageModule' }
+  { path: 'check', loadChildren: './pages/check/check.module#CheckPageModule' },
+  {
+    path: 'date-time',
+    loadChildren: './pages/date-time/date-time.module#DateTimePageModule'
+  }
 ];
 
 @NgModule({
