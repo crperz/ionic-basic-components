@@ -1,0 +1,12 @@
+<app-header title="List Reorder"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-reorder-group [disabled]="false" (ionItemReorder)="reorder($event)">
+      <ion-item *ngFor="let character of characters">
+        <ion-label>{{ character }}</ion-label>
+        <ion-reorder slor="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+</ion-content>
