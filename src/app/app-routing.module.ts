@@ -33,7 +33,9 @@ const routes: Routes = [
     path: 'infinite-scroll',
     loadChildren:
       './pages/infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule'
-  }
+  },
+  { path: 'input', loadChildren: './pages/input/input.module#InputPageModule' },
+  { path: 'list', loadChildren: './pages/list/list.module#ListPageModule' }
 ];
 
 @NgModule({
