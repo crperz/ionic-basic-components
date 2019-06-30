@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
+import { PipesModule } from './pipes/pipes.module';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     IonicModule.forRoot(), // Importa todos los componentes propios de Ionic
     AppRoutingModule,
     ComponentsModule,
+    PipesModule,
     HttpClientModule
   ],
   providers: [

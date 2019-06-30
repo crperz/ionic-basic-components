@@ -15,4 +15,8 @@ export class DataService {
   getMenuOpts() {
     return this.http.get<Page[]>('/assets/data/menu.json');
   }
+
+  getAlbums() {
+    return this.http.get<any[]>('https://jsonplaceholder.typicode.com/albums');
+  }
 }
