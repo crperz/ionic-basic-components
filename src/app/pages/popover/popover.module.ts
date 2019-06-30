@@ -5,29 +5,27 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ModalPage } from './modal.page';
+import { PopoverPage } from './popover.page';
+import { PopoverInfoComponent } from 'src/app/components/popover-info/popover-info.component';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { ModalInfoPage } from '../modal-info/modal-info.page';
-import { ModalInfoPageModule } from '../modal-info/modal-info.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: ModalPage
+    component: PopoverPage
   }
 ];
 
 @NgModule({
   // entryComponents: Necessary when angular must renderized on executing time (dynamic)
-  entryComponents: [ModalInfoPage],
+  entryComponents: [PopoverInfoComponent],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    ComponentsModule,
-    ModalInfoPageModule
+    ComponentsModule
   ],
-  declarations: [ModalPage]
+  declarations: [PopoverPage]
 })
-export class ModalPageModule {}
+export class PopoverPageModule {}
