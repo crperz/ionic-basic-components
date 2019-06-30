@@ -1,13 +1,21 @@
 <ion-header no-border>
   <ion-toolbar>
-    <ion-title text-capitalize>componentes</ion-title>
+    <ion-buttons slot="start">
+      <!-- First way: Manually menu -->
+      <!-- <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button> -->
+      <!-- Second way: Special component -->
+      <ion-menu-button color="primary" menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title text-capitalize color="primary">componentes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor="let page of pages" [routerLink]="page.redirectTo">
-      <ion-icon slot="start" [name]="page.icon"></ion-icon>
+    <ion-item *ngFor="let page of pages | async" [routerLink]="page.redirectTo">
+      <ion-icon slot="start" [name]="page.icon" color="primary"></ion-icon>
       <ion-label>{{ page.name }}</ion-label>
     </ion-item>
   </ion-list>
