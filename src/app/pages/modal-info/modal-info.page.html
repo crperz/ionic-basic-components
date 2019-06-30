@@ -1,0 +1,10 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title text-capitalize>{{ name }} -- {{ country }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button (click)="closeNotArguments()" expand="full" color="primary">Close with no arguments</ion-button>
+  <ion-button (click)="closeArguments()" expand="full" color="secondary">Close with arguments</ion-button>
+</ion-content>
